@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+{% block content %}
+<h2>Bem-vindo, {{ username }}!</h2>
+<p>Escolha o tipo de triagem:</p>
+<a href="/adulto">Questionário Adulto</a><br><br>
+<a href="/crianca">Questionário Criança</a><br><br>
+<hr style="border: 1px solid #eee;">
+<br>
+<a href="/logout">Sair (Logout)</a>
+{% endblock %}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triagem UBS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('/static/logo_ubs.png'); /* Caminho para sua logo */
+            background-size: 200px; /* Ajuste o tamanho do logo */
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed; /* Mantém o logo fixo ao rolar a página */
+            background-color: #f0f8ff; /* Cor de fundo caso a imagem não carregue */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px 0; /* Adiciona espaço no topo e embaixo */
+        }
+        .container {
+            background-color: rgba(255, 255, 255, 0.97); /* Fundo branco com pouca transparência */
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 90%;
+            max-width: 500px;
+        }
+        input[type="text"], input[type="password"] {
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin: 8px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        button {
+            background-color: #0056b3;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+        }
+        button:hover {
+            background-color: #004494;
+        }
+        a {
+            color: #0056b3;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        h2 {
+            color: #333;
+        }
+        footer {
+            margin-top: 25px;
+            padding-top: 15px;
+            border-top: 1px solid #eee;
+            font-weight: bold;
+            color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        {% block content %}{% endblock %}
+        <footer>
+            <p>Estamos esperando por você nesta unidade UBS!</p>
+        </footer>
+    </div>
+</body>
+</html>
