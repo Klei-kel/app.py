@@ -109,7 +109,6 @@ def logout():
     session.pop("username", None)
     return redirect(url_for("login"))
 
-
 if __name__ == "__main__":
     inicializa_csv()
-    app.run(debug=True)
+    app.run()
