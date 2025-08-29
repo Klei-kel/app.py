@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+{% block content %}
+<h2>Questionário Criança</h2>
+<form method="post" style="text-align: left;">
+    Nome da criança: <input type="text" name="nome" required><br>
+    Idade: <input type="text" name="idade" required><br>
+    Responsável: <input type="text" name="responsavel" required><br>
+    Queixa principal: <input type="text" name="queixa" required><br>
+    Tempo de sintomas: <input type="text" name="tempo"><br>
+    Sintomas graves: <input type="text" name="sintomas"><br>
+    Doenças diagnosticadas: <input type="text" name="doencas"><br>
+    Medicamentos em uso: <input type="text" name="medicamentos"><br>
+    Alergias: <input type="text" name="alergias"><br>
+    <div style="text-align: center; margin-top: 20px;">
+        <button type="submit">Enviar</button>
+    </div>
+</form>
+{% endblock %}
